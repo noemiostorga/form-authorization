@@ -7,19 +7,16 @@ import { Router, Route, browserHistory, hashHistory } from 'react-router';
 
 
 // Layout
-import ExampleLayout from 'layout/example';
+
 
 // UI
-import ExampleComponent from 'ui/example';
+import LoginForm from 'ui/login';
 
 const Site = (
-  <MuiThemeProvider>
+ 
     <Router history={hashHistory}>
-      <Route component={ExampleLayout}>
-        <Route path="/" component={ExampleComponent} />
-      </Route>
+        <Route path="/" component={LoginForm} />
     </Router>
-  </MuiThemeProvider>
 );
 
 render(Site, document.getElementById('app'));
