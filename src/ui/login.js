@@ -1,10 +1,8 @@
 import React from 'react';
-import { login } from './api/api';
-
-
+import { login } from 'api/api';
 
 export default React.createClass({
-   getInitialState: function () {
+  getInitialState: function () {
     return {
       username: '',
       password: ''
@@ -22,11 +20,12 @@ export default React.createClass({
   },
   render: function () {
     return (
-        <form>
-          <input placeholder="username"/><br/>
-          <input placeholder="password" /><br/>
-          <button>Submit</button>
-        </form>
+      <form id="login" onSubmit={this.handleSubmit}>
+        <h1>Login</h1>
+        <input name="username" value={this.state.username} onChange={this.handleChange} /><br />
+        <input name="password" value={this.state.password} onChange={this.handleChange} type="password" /><br />
+        <button type="submit">submit</button>
+      </form>
     )
   }
-})  
+}) 

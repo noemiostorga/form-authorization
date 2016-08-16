@@ -19,7 +19,7 @@ module.exports = {
     ExtractCSS
   ],
   resolve: {
-    root: path.resolve('./src/')
+    root: path.resolve('./src/'), 
   },
   module: {
     loaders: [

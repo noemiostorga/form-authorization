@@ -8,7 +8,6 @@ import { Router, Route, browserHistory, hashHistory } from 'react-router';
 
 // Layout
 
-
 // UI
 import LoginForm from 'ui/login';
 
